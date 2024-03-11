@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container1 {
+      color: blue;
+    }
+    .list1 {
+      font-size: 14px;
+    }
+    .highlight + p {
+      background: yellow;
+    }
+    .nav :nth-child(1) {
+      color: red;
+    }
+    .container2 + h2 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .highlight>span {
+      color: green;
+    }
+    .container3 >''>p { //여기모르겠다 증손자구하는법
+      font-weight: bold;
+    }
+    .list2>li {
+      background: gray;
+    }
+    .container4 p:nth-last-child(1) {
+      color: orange;
+    }
+  </style>
+  </div>
+</head>
+<body>
+  <!-- 초급 -->
+  <!-- 1. HTML 문서에는 `div` 요소가 있고, 이 요소에 `class` 속성으로 "container"가 할당되어 있습니다. 
+            이 `div` 요소 내에 있는 모든 `p` 요소의 텍스트 색상을 파란색으로 지정해 보세요. -->
+   <div class="container1">
+    <p>하나</p>
+    <p>둘둘</p>
+    <p>셋셋</p>
+   </div>
+  <!-- 2. 다음 HTML 코드에서 "list" 클래스를 가진 `ul` 요소의 자식 `li` 요소들의 폰트 크기를 14px로 변경하세요 -->
+    <ul class="list1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+  <!-- 3. 아래 HTML 코드에서 "highlight" 클래스를 가진 `div` 요소 바로 옆에 있는 `p` 요소의 배경색을 노란색으로 변경하세요. -->
+    <div class="highlight"></div>
+    <p>This is a paragraph.</p>
+
+  <!-- 중급 -->
+  <!-- 1. 다음 HTML 코드에서 "nav" 클래스를 가진 `ul` 요소 내의 첫 번째 `li` 요소의 텍스트 색상을 빨간색으로 변경하세요. -->
+    <ul class="nav">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+  <!-- 2. 아래 HTML 코드에서 "container" 클래스를 가진 `div` 요소 안에 있는 `h2` 요소의 글꼴을 Arial로 변경하세요. -->
+    <div class="container2">
+        <h2>This is a heading</h2>
+        <p>This is a paragraph.</p>
+    </div>
+
+  <!-- 3. 다음 HTML 코드에서 "highlight" 클래스를 가진 `div` 요소 내의 모든 `span` 요소의 텍스트 색상을 초록색으로 변경하세요. -->
+    <div class="highlight">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+    </div>
+  <!-- 고급 -->
+  <!--1. 아래 HTML 코드에서 "container" 클래스를 가진 `div` 요소 내에 있는 `p` 요소 중 
+         직속 자식이 아닌 모든 `p` 요소의 텍스트를 굵게(Bold) 변경하세요. -->
+    <div class="container3">
+        <p>This is a paragraph.</p>
+        <div>
+            <p>This is another paragraph.</p>
+        </div>
+        <p>Yet another paragraph.</p>
+    </div>
+
+  <!--2. 다음 HTML 코드에서 "list" 클래스를 가진 `ul` 요소 내의 직속 자식 `li` 요소의 배경색을 회색으로 변경하세요. -->
+    <ul class="list2">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+  <!--3. 아래 HTML 코드에서 "container" 클래스를 가진 `div` 요소 안에 있는 `p` 요소 중에서
+         마지막 `p` 요소의 텍스트 색상을 주황색으로 변경하세요. -->
+    <div class="container4">
+        <p>This is a paragraph.</p>
+        <p>Another paragraph.</p>
+        <p>Yet another paragraph.</p>
+    </div>
+ 
+</body>
+</html>
