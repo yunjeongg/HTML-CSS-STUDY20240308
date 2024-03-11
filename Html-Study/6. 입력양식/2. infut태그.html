@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      /*height: 100px;*/
+      display: inline-block;
+    }
+    button {
+      /*width: 60px;*/
+      display: inline-block; //img, input, button 세개는 기본 인라인블록
+    }
+  </style>
+</head>
+<body>
+  <form action="http://www.naver.com">
+    <input type="text" value="춘식이" placeholder="이름을쓰세요">
+    <input type="text" value="춘식이" placeholder="이름을쓰세요" disabled>
+    <input type="text" value="춘식이" placeholder="이름을쓰세요" readonly>
+    
+    <br><input type="password">
+    <br><input type="password"> //alt+shift+아래방향키
+    <br><input type="email">
+    
+    <br><input type="checkbox" name="hobby" disabled> 축구 //체크못하게 잠가놓기 (품절등)
+    <br><input type="checkbox" name="hobby" checked> 농구 //기본체크
+    <br><input type="checkbox" name="hobby"> 배구  // 서버연동시 묶을체크박스의 네임은 같게 설정하는 것이 좋다.
+    
+    <br><input type="radio" name="mail"> 네 //예 누르면 아니오 풀리는 버튼. 여러선택지 중 하나만 선택됨
+    <br><input type="radio" name="mail"> 아니오
+    <br><input type="radio" name="mail" disabled> 중간 //잠가놓기
+    
+    <br><input type="number"> 숫자만입력가능
+    <br><input type="number" value="5" min="3" max="10"> // 초기값입력가능 3이상 10미만
+
+    <br><input type="range" value="7" min="0" max="10"> // 게이지바
+
+    <br><input type="file"> // 파일 선택
+    <br><input type="file" multiple> // 파일 여러개 선택
+    <br><input type="file" multiple accept="image/*"> //업로드 가능 파일 이미지로 제한
+    
+    <br><input type="hidden" name="nick" value="똥멍청이"> // 사용자 몰래 서버로 보낼 데이터 ex)어디에서, 한글/영어, 브라우저뭐쓰는지등등 ...
+    
+    <br><button>버튼</button>
+    <br><button type="button">button</button> //깡통 내 마음대로 커스텀가능
+    <br><button type="submit">submit</button> //폼액션url로 제출할때(이동)
+    <br><button type="reset">reset</button> //초기화버튼
+
+    <br><input type="button" value="뻐튼"> //버튼쓸때 input보단 button태그 쓰는게 좋다.
+    <br><input type="submit" value="뻐튼"> //1. input보단 button태그가 버튼인지 알기 쉽다(직관성)
+    <br><input type="reset" value="뻐튼"> //2. 버튼은 자식태그 삽입가능해 활용도높다 인풋은 닫는태그가없어 자식태그삽입불가 (ex)이미지등
+
+  </form>
+
+  
+
+
+</body>
+</html>
