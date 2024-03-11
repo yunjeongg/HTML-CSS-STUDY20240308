@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li.orange { /*&&조건같은느낌. li이면서 class orange인것.*/
+      background: orange;
+    }
+    li#apple.green { /*li태그이면서 id apple, class green인것, 각각 선택자 사이는 붙여써야함. 띄어쓰는순간의미바뀜*/
+      color: yellowgreen;
+    }
+    h1.yellow.low#change.primary {
+      background: violet;
+    }
+  </style>
+</head>
+<body>
+  <ul class="food">
+    <li class="korean"></li>
+    <li class="korean"></li>
+    <li class="korean"></li>
+    <li class="korean"></li>
+  </ul>
+  
+  <h1 id="change" class="yellow low primary">안녕하세요</h1>
+
+  <div>
+    <ul>
+      <li id="apple" class="green">사과</li>
+      <li>포도</li>
+      <li class="orange">오렌지</li>
+    </ul>
+
+    <div class="green">당근</div>
+    <p class="big">토마토</p>
+    <span class="orange">오렌지</span>
+  </div>
+</body>
+</html>
