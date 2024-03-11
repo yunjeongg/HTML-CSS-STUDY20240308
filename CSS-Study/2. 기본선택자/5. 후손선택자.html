@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*자식, 후손, 형제선택자
+    - 가장 마지막 선택자가 타겟이고
+    앞에는 전부 조건이다.*/
+    div .orange { /*div 띄어쓰기 다음선택자 의 경우 후손선택자, 붙이면 일치선택자*/
+      background: orange;
+    }
+    body >div >ul { 
+      list-style: none;
+    }
+    body div ul {/*태그 띄어쓰기 (만일 띄어쓰기만으로 구분이안갈것같으면 조상을 많이나열하기)*/)
+      list-style: none;
+    }
+
+    body div em {
+      background: skyblue;
+    }
+
+  </style>
+</head>
+<body>
+  
+
+  <h1 id="change" class="yellow low primary">안녕하세요</h1>
+  <em>화이팅</em>
+  <div>
+    <em>해야지~</em>
+  </div>
+  
+
+  <section>
+    <div>
+      <ul>
+        <li id="apple" class="green">사과</li>
+        <li>포도</li>
+        <li class="orange">오렌지</li>
+      </ul>
+  </section>
+
+    <div class="green">당근</div>
+    <p class="big">토마토</p>
+    <span class="orange">오렌지</span>
+  </div>
+</body>
+</html>
