@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label {
+      display: block; //라벨태그는 인라인태그지만, 관례적으로 디스플레이 블록으로 바꿔서씀
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#//안정해졌을때 임시로 샵씀">
+    <label>
+      <input type="checkbox"> 자동로그인 //input태그와 자동로그인이라는 텍스트는 같은줄에 있으나 서로 상관이없다. 이 경우 라벨태그로 묶어주면 둘 사이가 연결이 되어 자동로그인이라는 텍스트만 눌러도 체크표시가됨
+    </label>
+
+    <label>
+      이름: <input type="text">
+    </label>
+
+    <label for="remember">아이디 기억하기</label> //1.
+    
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+
+    <input id="remember" type="checkbox"> //1. 아이디값을 주면 떨어져 있어도 라벨태그 적용됨
+  </form>
+  
+</body>
+</html>
