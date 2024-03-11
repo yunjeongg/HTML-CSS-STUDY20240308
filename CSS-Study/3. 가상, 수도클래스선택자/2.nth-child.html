@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li:nth-child(3) { /*위에서부터 순서에맞는게적용됨*/
+      color: red;
+    }
+
+    #food li:last-child {
+      color: red;
+    }
+
+    #fruits li:first-child {
+      font-size: 24px;
+    }
+
+    #fruits li:nth-child(2n) {/*n에 0부터 순차적으로 대입해봤을때 선택되는 태그를 스타일*/
+      background: aqua;
+    }   
+    #fruits li:nth-child(even) {/*n에 0부터 순차적으로 대입해봤을때 선택되는 태그를 스타일*/
+      background: aqua;
+    }     
+
+    #fruits li:nth-child(2n+3) {
+      background: violet;
+    }
+    #fruits li:nth-child(odd) {
+      background: violet;
+    }
+
+    #food li:not(.melon) { /*li중 class melon빼고*/
+      list-style: none;
+    }
+    .sports div:nth-child() {
+      background: blue;
+    }
+    .sports div:nth-of-type(3) {
+      background: blue;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="sports">
+    <div>축구</div>
+    <div>농구</div>
+    <p>하하호호</p>
+    <div>배구</div>
+    <div>야구</div>
+  </div>
+
+  <ul id="food">
+    <li>초코빵</li>
+    <li class="melon">메론빵</li>
+    <li>크림빵</li>
+  </ul>
+  
+  <!-- ul#fruits>li*7 -->
+  <ul id="fruits">
+    <li>딸기</li>
+    <li>오렌지</li>
+    <li>키위</li>
+    <li>바나나</li>
+    <li>사과</li>
+    <li>자몽</li>
+    <li>배</li>
+  </ul>
+</body>
+</html>
