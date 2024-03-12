@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit; /*부모가 준 색깔로 돌려보내기*/
+  text-decoration: none; /*밑줄없애기*/
+}
+
+div {
+  background: gray;
+  color: white;
+  width: 70%;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+div ul li {
+  margin-bottom: 10px;
+}
+
+div ul li:last-child {
+  margin-bottom: 0;
+}
+
+div ul li a {
+  display: block;
+  padding: 15px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+div ul li a:hover {
+  color: yellow;
+  background: skyblue;
+}
