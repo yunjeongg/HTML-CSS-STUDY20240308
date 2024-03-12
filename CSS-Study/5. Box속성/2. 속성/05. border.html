@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      background: gray;
+      margin: 10px auto 0;
+      box-sizing: border-box;
+    }
+
+    .box1 {
+      background: tomato;
+      /* 선의굵기 */
+      border-width: 10px;
+      /* 선의모양 */
+      border-style: solid;
+      /* 선의색상 */
+      border-color:orange;
+    }
+    .box2 {
+      background-color: yellowgreen;
+      border: 10px dashed aqua;
+    }
+    .box3 {
+      background: violet;
+      border-bottom: 4px dotted blue;
+      border-left: 10px solid brown;
+      border-top: 7px solid coral;
+      border-top-color: yellow;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- .container>.box.box$*3 -->
+  <div class="container">
+    <!-- 공통디자인은 box로 개별디자인은 box1-3으로  -->
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+</body>
+</html>
