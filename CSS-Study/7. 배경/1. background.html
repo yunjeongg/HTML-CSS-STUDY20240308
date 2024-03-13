@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 550px;
+      height: 350px;
+      border: 4px dashed gray;
+      margin: 50px auto;
+
+      background: orange;
+       background-image: url(../7.\ 배경/img/sky.jpg);
+      background: no-repeat red url(../7.\ 배경/img/sky.jpg) 
+                  100px 50px /200px 70px;
+                    /*포지션 / 사이즈*/
+      
+      /* 배경 이미지 사이즈 조정*/
+      /*background-size: 100px 100px;*/ /*width height*/
+
+      /* 액자보다 사진이 작을때 사진 반복 끄기 */
+      /*background-repeat: no-repeat;*/
+      /*사진반복 x축*/
+      /* background-repeat: repeat-x; */
+
+      /* 배경이미지 위치조정*/
+      background-position: 300px center; /*x축 y축*/
+      /* left right top bottom center, 픽셀, 퍼센트로도 조정가능 */
+
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
