@@ -1,0 +1,111 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+section {
+  background: lightgrey;
+  border: 2px solid gray;
+  width: 854px;
+}
+
+section .title h1 {
+  font-size: 2em;
+  padding: 15px;
+  font-weight: 700;
+}
+
+section h2 {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+}
+
+.contents {
+  background-color: darkgray;
+  padding: 10px 0;
+} 
+
+.jia::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.content {
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin-right: 10px;
+}
+.content:first-child {
+  margin-left: 10px;
+}
+
+.red {
+  
+  background: red;
+  padding: 5px;
+}
+.redp {
+  width: 190px;
+  height: 150px;
+  background: blue no-repeat url(../../img/tulip.jpg);
+  background-size: 150%;
+  background-position: 50px/center;
+  border: 1px solid white;
+}
+.content.red p {
+  margin: 10px;
+  font-weight: 700;
+  text-align: justify;
+}
+.pink {
+  background: pink;
+  padding: 5px;
+}
+.pinp {
+  width: 190px;
+  height: 150px;
+  background: url(../../img/jebi.jpg);
+  background-size: 150%;
+  background-position: 50px/center;
+  border: 1px solid white;
+}
+.content.pink p {
+  margin: 10px;
+  font-weight: 700;
+  text-align: justify;
+}
+.orange {
+  background: orange;
+  padding: 5px;
+}
+.orap {
+  width: 190px;
+  height: 150px;
+  background: url(../../img/hobak.jpg);
+  background-size: 150%;
+  background-position: 30px/center;
+  border: 1px solid white;
+}
+.content.orange p {
+  margin: 10px;
+  font-weight: 700;
+  text-align: justify;
+}
+.yellow {
+  background: yellow;
+  padding: 5px
+}
+.yelp {
+  width: 190px;
+  height: 150px;
+  background: url(../../img/sunflower.jpg);
+  background-size: 150%;
+  background-position: 10px/center;
+  border: 1px solid white;
+}
+.content.yellow p {
+  margin: 10px;
+  font-weight: 700;
+  text-align: justify;
+}

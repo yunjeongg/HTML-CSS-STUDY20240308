@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+section {
+  background: pink;
+  border: 2px solid salmon;
+  width: 500px;
+}
+.title h1 {
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 10px;
+}
+.contents {
+  width: 100%;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.content {
+  width: 48%;
+  height: 208px;
+  float: left;
+  margin: 1%;
+  padding: 1%;
+}
+.a1 {
+  background: lightgoldenrodyellow;
+}
+.a2 {
+  background: tan;
+}
