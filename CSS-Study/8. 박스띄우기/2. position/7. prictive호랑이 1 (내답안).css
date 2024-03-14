@@ -1,0 +1,64 @@
+@import url('../../common.css');
+
+body {
+  background: gray;
+}
+#wrapper {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+#wrapper h1 {
+  background: #123456;
+  font-weight: 700;
+  color: rgb(173, 173, 61);
+  text-align: center;
+  padding: 20px 0;
+
+}
+#wrapper h1 strong {
+  color: white;
+  font-size: 4em;
+}
+#wrapper h1 span {
+  font-size: 2em;
+}
+#wrapper h1 em {
+  font-size: 3em;
+  color: gray;
+}
+.container {
+  background-color: white;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.menu {
+  background: lightgray;
+  width: 25% ;
+  float: left;
+  padding: 20px 20px 100%;
+  text-decoration: underline;
+  line-height: 2;
+}
+.content {
+  width: 75%;
+  float: right;
+  line-height: 1.4;
+}
+.content h2 {
+  background: rgb(138, 32, 32);
+  color: yellow;
+  font-weight: 700;
+  font-size: 1.3em;
+  padding: 10px;
+}
+.content p {
+  padding: 20px;
+}
+address {
+  background-color: rgb(168, 168, 168);
+  padding: 10px;
+}
