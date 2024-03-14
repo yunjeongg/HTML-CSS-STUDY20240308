@@ -1,0 +1,129 @@
+@import url('../../common.css');
+
+/* title 1 */
+body {
+  background: darkgray;
+}
+#wrapper {
+  margin: auto;
+  width: 70%;
+}
+#wrapper h1 {
+  background: orange;
+  color: white;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 0;
+}
+#wrapper h1 span {
+  display: block;
+  font-size: 0.25em;
+  padding-top: 10px;
+}
+
+/* title 2*/
+#wrapper .stit {
+  background: rgb(177, 176, 176);
+  font-size: 0.1em;
+  text-align: center;
+}
+
+/* contents */
+#wrapper .container {
+  background: white;
+  width: 100%;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* contents left */
+#wrapper .container .side-menu {
+  width: 20%;
+  float: left;
+}
+#wrapper .container .side-menu h3 {
+  background: rgb(168, 50, 50);
+  font-weight: 700;
+  color: white;
+  padding: 10px;
+}
+#wrapper .container .side-menu ul {
+  text-decoration: underline;
+  line-height: 2;
+  padding: 10px;
+}
+
+/* contents middle */
+#wrapper .container .main-content {
+  width: 60%;
+  float: left;
+  padding: 10px;
+  background: rgb(223, 223, 223);
+}
+#wrapper .container .main-content .title {
+  background: #123456;
+  color: white;
+  padding: 10px;
+}
+#wrapper .container .main-content .artist {
+  font-weight: 700;
+  color: #123456;
+  padding: 10px;
+}
+#wrapper .container .main-content .detail {
+  color: #123456;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+/* contents right */
+#wrapper .container .banner {
+  width: 20%;
+  float: left;
+  background: white;
+  padding: 10px;
+}
+#wrapper .container .banner h3 {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.5;
+}
+#wrapper .container .banner .all {
+  color: rgb(129, 129, 129);
+  display: block;
+  text-decoration: underline;
+}
+
+#wrapper .container .banner .love {
+  color: orange;
+  display: block;
+  text-decoration: underline;
+}
+#wrapper .container .banner strong {
+  display: block;
+}
+#wrapper .container .banner .link a {
+  font-weight: 700;
+  font-size: 0.8em;
+  text-decoration: underline;
+  display: block;
+  padding-top: 20px;
+}
+#wrapper .container .banner .link span {
+  font-size: 0.5em;
+  display: block;
+}
+
+#wrapper footer address {
+  background: #123456;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
